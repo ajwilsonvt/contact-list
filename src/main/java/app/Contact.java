@@ -1,7 +1,7 @@
 package app;
 
 /**
- * Items are the resources of the API
+ * Resource of the API
  */
 public class Contact {
 

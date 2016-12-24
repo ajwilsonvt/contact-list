@@ -1,10 +1,13 @@
 package app;
 
+import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- * Test case
- */
 public class ItemControllerTest {
+
+    @Test
+    public void dbConnect() {
+        //
+    }
 
 }

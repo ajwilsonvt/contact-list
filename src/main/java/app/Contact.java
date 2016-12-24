@@ -6,9 +6,7 @@ package app;
 public class Contact {
 
     private String name;
-    private long number;
-
-    public Contact() {}
+    private String number;
 
     public String getName() {
         return name;
@@ -16,10 +14,8 @@ public class Contact {
 
     public void setName(String name) { this.name = name; }
 
-    public long getNumber() {
-        return number;
-    }
+    public String getNumber() { return number; }
 
-    public void setNumber(long number) { this.number = number; }
+    public void setNumber(String number) { this.number = number; }
 
 }

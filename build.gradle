@@ -11,12 +11,11 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
 jar {
-    baseName = 'gs-rest-service'
+    baseName = 'rest-app'
     version =  '0.1.0'
 }
 
@@ -29,8 +28,11 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile('org.springframework.boot:spring-boot-starter-test')
-
+    compile("org.springframework.security:spring-security-web:4.1.1.RELEASE")
     compile("org.apache.commons:commons-lang3:3.5")
-    //testCompile
+    
+    runtime("org.postgresql:postgresql:9.4.1207")
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
+
+    testCompile("junit:junit")
 }

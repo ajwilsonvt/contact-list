@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Front-end of the web application
-https://spring.io/guides/tutorials/spring-security-and-angular-js/
-
-ng-cloak, ng-app, and ng-controller are Angular 1 directives -->
+https://spring.io/guides/tutorials/spring-security-and-angular-js/ -->
 <head>
     <meta charset="UTF-8">
-    <title>REST app</title>
+    <title>Contact List</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
-    <style type="text/css">
-        [ng\:cloak], [ng-cloak], .ng-cloak {
-            display: none !important;
-        }
-    </style>
 </head>
 
-<body ng-app="REST app">
-    <div class ="container">
-        <h1>this is the home page</h1>
-        <div ng-controller="home as home" ng-cloak class="ng-cloak">
-            <p>the id is {{home.test.name}}</p>
-            <p>the number is {{home.test.number}}</p>
-        </div>
-    </div>
+<body ng-app="Contact List">
+    <div ng-view></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

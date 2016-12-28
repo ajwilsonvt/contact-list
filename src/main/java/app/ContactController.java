@@ -16,10 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * Controller for Contact.java
- *
- * Next
- * 1. Add Angular front-end
- * 2. Deploy to AWS
  */
 @RestController
 public class ContactController {

@@ -6,3 +6,4 @@
 * JDBC
 * PostgreSQL
 * JUnit4
+* Angular 1

@@ -103,17 +103,4 @@ public class ContactController {
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
 
-    /**
-     * Allows injection of a production SQL database for persistent
-     * storage
-     *
-     * This method is never used. Database connection is established in
-     * Application.java with the @Bean annotation and the corsFilter()
-     * method
-     */
-    public void setDataSource(DataSource ds) {
-        this.ds = ds;
-        this.jdbc = new JdbcTemplate(ds);
-    }
-
 }

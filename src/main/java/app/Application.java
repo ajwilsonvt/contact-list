@@ -8,23 +8,16 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
 /**
- * The app
- * Followed https://spring.io/guides/gs/rest-service/
- * and https://github.com/spring-guides/gs-rest-service/tree/master/complete
- * and https://spring.io/guides/gs/relational-data-access/
- *
+ * Back-end of the web application
+ * https://spring.io/guides/gs/rest-service/
+ * https://github.com/spring-guides/gs-rest-service/tree/master/complete
+ * https://spring.io/guides/gs/relational-data-access/
  */
 @SpringBootApplication
-@Configuration
-@EnableAutoConfiguration
-@ComponentScan
 public class Application {
 
     public static final Logger log = LoggerFactory.getLogger(Application.class);

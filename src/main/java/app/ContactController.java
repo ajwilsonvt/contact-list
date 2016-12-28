@@ -37,7 +37,7 @@ public class ContactController {
      * Receives a Contact as JSON object
      * @return HTTP Status 201 if success and new location header
      */
-    @RequestMapping(value="/", method= RequestMethod.POST)
+    @RequestMapping(value="/add", method= RequestMethod.POST)
     public ResponseEntity<Void> add(@RequestBody Contact c) {
         //? protects against SQL injection attacks by instructing
         //JDBC to bind variables

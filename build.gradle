@@ -35,4 +35,5 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-jdbc")
 
     testCompile("junit:junit")
+    compile("org.springframework.boot:spring-boot-devtools") //remove from final build
 }
